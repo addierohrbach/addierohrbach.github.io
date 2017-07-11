@@ -4,7 +4,6 @@ body {
 	font-family: $font-style;
 	font-size: 1.1em;
 	line-height: 1.6;
-	-webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3 {
@@ -24,10 +23,22 @@ h1 {
 	}
 }
 
+// header
+
+
+header {
+	background: $header-color;
+	text-align: center;
+	margin: 50px 0 0;
+	height: 30vh;
+  padding-top: 100px;
+  border-top: 20px solid #1f4b7a;
+  padding-bottom: 50px;
+}
+
 header p {
-  padding: 0px 200px;
+  margin: 0px 275px;
   color: black;
-	z-index: -1;
 }
 
 header h1 {
@@ -37,6 +48,8 @@ header h1 {
 h2 {
 	font-size: 2em;
 }
+
+// links
 
 a, a:visited {
 	color: $link-color;
@@ -48,26 +61,7 @@ a:hover {
 	text-decoration: none;
 }
 
-header {
-	background: $header-color;
-  background-size: cover;
-	background-attachment: fixed;
-	padding: 0px 15px;
-	text-align: center;
-	margin: 50px 0 0;
-	height: 30vh;
-	display: block;
-	justify-content: center;
-	align-items: center;
-  padding-top: 100px;
-  border-top: 20px solid #1f4b7a;
-  padding-bottom: 50px;
-}
-
-
-
 main {
-	padding: 0 15px;
 	max-width: $content-width;
 	margin: 0 auto;
 }
@@ -81,18 +75,15 @@ time {
 	margin: 0 auto;
 }
 
-/* Aside */
+// aside
 
 aside {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #fff;
 	width: 100%;
 	nav {
 		float: right;
-		max-width: 800px;
-		margin: 0 auto;
 		ul {
 			margin: 0;
 			padding: 0;
@@ -101,36 +92,29 @@ aside {
 				float: left;
 				position: relative;
 				a {
-					text-decoration: none;
 					display: block;
 					padding: 15px;
 					font-family: 'Muli', sans-serif;
 					line-height: 20px;
-					margin-bottom: -1px;
-					box-shadow: 0;
 					&:hover,
           &:active {
 						background: #1f4b7a;
-						text-decoration: none;
 						color: $main;
 					}
 				}
 			}
 		}
-		&:after {
-			content: '';
-			display: table;
-			clear: both;
-		}
 	}
 }
+
+// footer
 
 footer {
 	text-align: center;
 	padding: 40px;
 }
 
-/* Blog */
+// blog
 
 h4 {
   margin-top: -40px;
@@ -149,19 +133,11 @@ h4 {
 	display: inline-block;
 }
 
-.blog-time {
-
-}
-
 .blog-excerpt {
   clear: both;
 }
 
-.blog-header {
-
-}
-
-/* Projects */
+// projects
 
 .proj-container {
   width: 300px;
