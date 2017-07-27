@@ -1,7 +1,7 @@
 <aside>
 	<div class="container">
-		<nav>
-			<ul>
+		<nav class="navigation">
+			<ul class="menu-links">
 				{% for page in site.pages %} {% if page.title %}
 				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 				{% endif %} {% endfor %}
@@ -15,7 +15,7 @@
 </aside>
 
 <header>
-	<h1><a href="/">{{ site.title }}</a></h1>
-	<p>Hi! I am a web design and development student, currently doing an apprentinceship 
+	<h1><a class="heading" href="/">{{ site.title }}</a></h1>
+	<p>Hi! I am a web design and development student, currently doing an apprentinceship
 		at 8th Light in Chicago and attending Northwestern University.</p>
 </header>
